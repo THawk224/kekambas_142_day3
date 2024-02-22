@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: beige;
+}
+
+
+.grid-container{
+    min-height: 200vh;
+    display: grid;
+    grid-template-columns: 5% 25% 60% 10%;
+    grid-template-rows: 10% 20% 50% 20%;
+    grid-template-areas: 
+    ". nav nav ." 
+    "picture picture picture picture" 
+    ". program-info program-info ." 
+    ". theater-info theater-info .";
+}
+
+.area-border{
+    border: 2px solid black;
+}
+
+.nav{
+    grid-area: nav;
+    background-color: black;
+}
+
+.nav-links{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links > a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links > a:hover{
+    font-size: larger;
+    text-decoration: underline;
+}
+
+.picture{
+    grid-area: picture;
+    background-color: grey;
+}
+
+.program-info{
+    grid-area: program-info;
+    background-color: ghostwhite;
+}
+
+.theater-info{
+    grid-area: theater-info;
+    background-color: grey;
+}
