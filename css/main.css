@@ -47,6 +47,8 @@ body{
 .picture{
     grid-area: picture;
     background-color: grey;
+    align-self: auto;
+    justify-self: auto;
 }
 
 .program-info{
